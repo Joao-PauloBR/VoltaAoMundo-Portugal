@@ -15,71 +15,85 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="d-flex align-items-center">
-            <img class="bandeira" src="img/bandeira.svg" alt="bandeira">
-            <a class="navbar-brand" href="#"><span class="ml-3">PORTUGAL</span></a>
+    <div class="bg-image">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="d-flex align-items-center">
+                <img class="bandeira" src="img/bandeira.svg" alt="bandeira">
+                <a class="navbar-brand" href="#"><span class="ml-3">PORTUGAL</span></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="cultura.html">HOME <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">CULTURA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HISTÓRIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INFORMAÇÕES GERAIS</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">REFERÊNCIAS</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">CULINÁRIA</a>
+                    <a class="dropdown-item" href="#">MAPA</a>
+                    <a class="dropdown-item" href="#">PONTOS TURÍSTICOS</a>
+                </li>
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form> -->
+            </div>
+        </nav>
+    </div>
+
+    <main class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+              <h1 id="title">Bem-vindo a Portugal: Descubra uma Jóia da Europa</h1>
+            </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="cultura.html">HOME <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CULTURA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">HISTÓRIA</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">INFORMAÇÕES GERAIS</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">REFERÊNCIAS</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">CULINÁRIA</a>
-                <a class="dropdown-item" href="#">MAPA</a>
-                <a class="dropdown-item" href="#">PONTOS TURÍSTICOS</a>
-            </li>
-          </ul>
-          <!--<form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form> -->
+      </div>
+
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-12 introducao">
+              <p> Seja muito bem-vindo ao nosso site informativo sobre Portugal, o país encantador situado na Península Ibérica! Se você está curioso para conhecer um lugar rico em história, cultura e beleza natural, está no lugar certo. Aqui, desvendaremos os segredos das pitorescas cidades, as delícias da gastronomia lusa, as tradições vibrantes e muito mais.</p>
+              <p>Venha conosco nesta jornada virtual para explorar Portugal, onde as praias douradas do Algarve se encontram com os castelos medievais do Norte. Prepare-se para descobrir como este país combina o charme antigo com a modernidade, criando um destino único que vai te encantar.</p>       
+              <p>Navegue por nossos artigos e informações para aprender sobre as maravilhas de Portugal, seja você um entusiasta da história, um amante da natureza ou um explorador em busca de aventuras. Aqui, você encontrará tudo o que precisa para planejar sua próxima viagem ou simplesmente se apaixonar pela rica herança deste belo país.</p>
+            </div>
+          </div>
         </div>
-    </nav>
-    
-    <main> 
-        <!-- Texto do site -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="" alt="">
+          </div>
+        </div>
 
-
-
-
-        
-        <!--<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contato</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-          </div> -->
-
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+              <h2 id="citacao-titulo">Por que amamos Portugal?</h2>
+              <p id="citacao-texto">"Portugal tem uma identidade e um encanto próprio que marcam os seus visitantes. Os passeios pelas suas cidades, a convivência com os seus habitantes, sentimos que parece mentira que sempre esteve lá. A coexistência de idiomas: embora possa parecer um exagero, o espanhol e o português são bastante semelhantes."</p>
+            </div>
+        </div>
+      </div>
 
 
     </main>
+
+
+
     <footer> <!-- rodapé -->
         <p><strong>Projeto Volta ao Mundo - Portugal</strong></p>
         <p><em>Desenvolvido por João Paulo Souza Bernucio</em></p>
