@@ -4,6 +4,13 @@
     text-transform: uppercase;
 
 }
+/*
+.centralizar-texto {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-grow: 1; 
+}*/
 
 .navbar-nav{
     text-align: right;
@@ -16,5 +23,5 @@
 
 .bandeira{
     width: 5em;
-    border-radius: 5px;
+    /*border-radius: 5px; */
 }
