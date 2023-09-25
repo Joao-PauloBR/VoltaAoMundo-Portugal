@@ -4,7 +4,17 @@
     text-transform: uppercase;
 
 }
-#nome{
+
+.navbar-nav{
     text-align: right;
-    margin-right: 100px;
+}
+
+.nav-item{
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bandeira{
+    width: 5em;
+    border-radius: 5px;
 }
