@@ -1,44 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Playfair+Display:ital@0;1&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500&family=Roboto:wght@100;400&display=swap');
 
-.nav-item{
-    font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
+#bandeira{
+    margin-left: 1rem;
+    width: 50px;
+    border-radius: 2px;
+}
 
+#portugal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 /*
-.centralizar-texto {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-grow: 1; 
-}*/
-
-.bg-image {
-    background-image: url('caminho');
-    background-size: cover; /* Define o tamanho da imagem para cobrir toda a página */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
-    /* Outros estilos para o corpo da página, como cores de texto, etc. */
-}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com transparência */
+   /*  backdrop-filter: blur(30px);} /* Desfoque aplicado ao fundo */
 
 .navbar-nav{
+    z-index: 3;
     text-align: right;
+    padding-right: 1rem;
 }
 
 .nav-item{
-    font-size: small;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
 }
 
-.bandeira{
-    width: 5em;
-    /*border-radius: 5px; */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 5px; /* Ajuste a posição vertical da linha para criar o sublinhado */
+    left: 0;
+    width: 0; /* Inicialmente, o sublinhado tem largura zero */
+    height: 2px; /* Defina a altura da linha (espessura do sublinhado) */
+    background-image: linear-gradient(to right, #055902 0%, #F2071B 30%, #F2E205 85%, #034AA6 96%); /* Gradiente de vermelho para verde (ajuste as cores conforme desejado) */
+    background-size: 100% 2px; /* Largura do gradiente igual à largura do sublinhado e altura de 2px */
+    transition: width 0.5s ease; /* Transição suave da largura com duração de 0.3 segundos */
 }
 
-#title{
+.nav-item:hover::after {
+    width: 100%;
+}
+
+body{
+    max-width: 100%; /* Defina a largura máxima para 100% da largura da viewport */
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+}
+
+/* Estilos para o carrossel */
+#carousel-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o carrossel atrás do conteúdo */
+}
+
+/* Estilos para as imagens do carrossel */
+.carousel-inner img {
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço do carrossel */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#titulo{
     font-family: 'PT Serif', serif;
+    margin-top: 20px;
 }
 
 .introducao{
@@ -59,4 +91,3 @@
     font-style: italic;
     line-height: 1.6;
 }
-
