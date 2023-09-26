@@ -45,6 +45,10 @@
     width: 100%;
 }
 
+main{
+    background-color: #f3f3ebc0;
+}
+
 /* Estilos para o carrossel */
 #background-carousel {
     margin-top: -3.6rem;
@@ -67,6 +71,7 @@
 #titulo{
     font-family: 'PT Serif', serif;
     margin-top: 20px;
+    text-align: center;
 }
 
 p{
@@ -75,6 +80,7 @@ p{
     font-style: normal;
     line-height: 1.5;
     text-align: justify;
+    color: black;
 }
 
 #citacao-titulo, #citacao-texto{
@@ -86,4 +92,14 @@ p{
     font-size: larger;
     font-style: italic;
     line-height: 1.6;
+}
+
+footer{
+    background-color: #181616;
+}
+
+.escritores{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
 }
