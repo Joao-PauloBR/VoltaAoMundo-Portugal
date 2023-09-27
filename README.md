@@ -57,6 +57,6 @@ Este projeto foi desenvolvido com dedicação como parte de um trablhado sugerid
 
 Para mais informações e atualizações, não deixe de visitar o site e explorar tudo o que Portugal tem a oferecer.
 
-Para acessar o site, [clique aqui](https://joao-paulobr.github.io/VoltaAoMundo-Portugal/).
+ **Para acessar o site, [clique aqui](https://joao-paulobr.github.io/VoltaAoMundo-Portugal/)**.
 
 *Última atualização: [27/09/2023]*
