@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500&family=Roboto:wght@100;400&display=swap');
+
+#navbarNavDropdown{
+    text-align: justify center;
+}
+
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-item{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 5px; /* Ajuste a posição vertical da linha para criar o sublinhado */
+    left: 0;
+    width: 0; /* Inicialmente, o sublinhado tem largura zero */
+    height: 2px; /* Defina a altura da linha (espessura do sublinhado) */
+    background-image: linear-gradient(to right, #055902 0%, #F2071B 30%, #F2E205 85%, #034AA6 96%); /* Gradiente de vermelho para verde (ajuste as cores conforme desejado) */
+    background-size: 100% 2px; /* Largura do gradiente igual à largura do sublinhado e altura de 2px */
+    transition: width 0.5s ease; /* Transição suave da largura com duração de 0.3 segundos */
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+main{
+    background-color: #f5f5f5;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+#titulo{
+    font-family: 'PT Serif', serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: justify;
+    color: black;
+}
+
+#citacao-titulo, #citacao-texto{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+#citacao-texto{
+    font-family: 'PT Serif', serif;
+    font-size: larger;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+footer{
+    background-color: #181616;
+}
+
+.escritores{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
