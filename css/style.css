@@ -76,3 +76,12 @@ p{
     font-weight: 400;
     text-decoration: none;
 }
+
+.credit {
+    text-decoration: underline;
+    text-align: center; /* Centralize o texto */
+    font-size: 16px; /* Escolha o tamanho de fonte apropriado */
+    color: #555; /* Escolha a cor do texto */
+    padding: -10px; /* Adicione espaçamento superior e inferior (opcional) */
+  }
+  
