@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@100;400&display=swap');
 
-#navbarNavDropdown{
+/*#navbarNavDropdown{
     text-align: justify center;
-}
+}*/
 
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -87,3 +88,39 @@ p{
     color: #555; /* Escolha a cor do texto */
     padding: -10px; /* Adicione espaçamento superior e inferior (opcional) */
   }
+
+
+/*Início - Página Culinária*/  
+.carousel-inner {
+    width: 100%;
+    margin-bottom: 25px;
+}
+  
+.site-title {
+    font-family: 'PT Serif', serif;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.slide-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.6)); /* Gradiente linear, ajuste a opacidade conforme necessário */
+    z-index: 2; /* Certifique-se de que o gradiente esteja na frente do título e do slide */
+}
+
+.descricao{
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+
+/*Final - Página Culinária*/
+  
