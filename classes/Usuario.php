@@ -105,4 +105,12 @@ class Usuario
         $conexao = new PDO('mysql:host=127.0.0.1;dbname=volta-ao-mundo', 'root', '');
         $conexao->exec($sql);
     }
+
+    public function atualizarStatus()
+    {
+        // Verifica se o status atual é "Não respondida" antes de atualizar para "Respondida"
+        if ($this->status === 'Não respondida') {
+            $this->status = 'Respondida';
+        }
+    }
 }

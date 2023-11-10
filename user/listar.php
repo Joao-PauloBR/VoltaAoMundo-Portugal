@@ -29,7 +29,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007acc">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="../index.html">
         <img src="../img/svg/coat_of_arms.svg" width="40px" alt="Brasão de Armas, bandeira de Portugal">
         Portugal
       </a>
@@ -76,6 +76,8 @@
                     <th scope="col">Sobrenome</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Mensagem</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,8 +88,8 @@
                         <td><?php echo $linha['sobrenome'] ?></td>
                         <td><?php echo $linha['email'] ?></td>
                         <td><?php echo $linha['mensagem'] ?></td>
-                        <td>
-                            <a href="editar.php?id=<?= $linha['id'] ?>">Lida</a>
+                        <td><?php if ($linha['status'] == 1) {echo "Lido";} else {echo "Não lido";}?></td>
+                        <td><a href="atualizar.php?id=<?= $linha['id'] ?>">Atualizar status</a></td>
                             <a href="excluir.php?id=<?= $linha['id'] ?>">Excluir</a>
                         </td>
                     </tr>
@@ -96,7 +98,7 @@
             </table>
         </div>
     
-        <a href="../adm/logout.php">Sair</a>
+        <h2><a href="../adm/logout.php">Sair</a></h2>
     
     </main>
     <footer class="bg-dark text-light py-3">
